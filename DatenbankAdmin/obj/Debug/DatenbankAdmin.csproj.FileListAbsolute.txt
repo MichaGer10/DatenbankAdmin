@@ -23,3 +23,4 @@ C:\Users\micha\OneDrive - DHBW Lörrach\DHBW\3. Semester\Software Engineering\Pr
 C:\Users\micha\OneDrive - DHBW Lörrach\DHBW\3. Semester\Software Engineering\Programm\DatenbankAdmin\obj\Debug\DatenbankAdmin.csproj.CopyComplete
 C:\Users\micha\OneDrive - DHBW Lörrach\DHBW\3. Semester\Software Engineering\Programm\DatenbankAdmin\obj\Debug\DatenbankAdmin.exe
 C:\Users\micha\OneDrive - DHBW Lörrach\DHBW\3. Semester\Software Engineering\Programm\DatenbankAdmin\obj\Debug\DatenbankAdmin.pdb
+C:\Users\micha\OneDrive - DHBW Lörrach\DHBW\3. Semester\Software Engineering\Programm\DatenbankAdmin\obj\Debug\DatenbankAdmin.Form2.resources

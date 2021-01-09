@@ -45,5 +45,10 @@ namespace DatenbankAdmin
         {
             searchDataDB(textBox1.Text);
         }
+
+        private void buttonNew_Click(object sender, EventArgs e)
+        {
+            new Form2().ShowDialog();
+        }
     }
 }
