@@ -19,7 +19,7 @@ namespace DatenbankAdmin
         MySqlDataAdapter adapter;
         DataTable dtable;
 
-        string connectionstring = "Server=127.0.0.1;Database=supermarket;Uid=root;Pwd=F4laRl!JDfMZBHr;SslMode=None";
+        private string connectionstring = "Server=127.0.0.1;Database=supermarket;Uid=root;Pwd=F4laRl!JDfMZBHr;SslMode=None";
         string insertquery = "INSERT INTO produkte(barcode,produktname,hersteller,preis,produktbild,freigabe,bestandsmenge) VALUES(@barcode,@produktname,@hersteller,@preis,@produktbild,@freigabe,@bestandsmenge)";
 
         public Produkte()
@@ -49,6 +49,39 @@ namespace DatenbankAdmin
         private void buttonNew_Click(object sender, EventArgs e)
         {
             new Form2().ShowDialog();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            
+            string barcodeSelectedRow = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            string deletequery = "DELETE FROM supermarket.produkte WHERE barcode=" + barcodeSelectedRow;
+
+            try
+            {
+                connection = new MySqlConnection(connectionstring);
+                connection.Open();
+
+                command = new MySqlCommand(deletequery, connection);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Daten Erfolgreich gelöscht");
+                    searchDataDB("");
+
+                }
+                else
+                {
+                    MessageBox.Show("Daten konnten nicht gelöscht werden");
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            connection.Close();
         }
     }
 }

@@ -31,20 +31,20 @@
             this.panelHeaderInsert = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.l = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.AddPctrBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ammountTB = new System.Windows.Forms.TextBox();
+            this.fgTB = new System.Windows.Forms.TextBox();
+            this.priceTB = new System.Windows.Forms.TextBox();
+            this.manfTB = new System.Windows.Forms.TextBox();
+            this.productnameTB = new System.Windows.Forms.TextBox();
+            this.barcodeTB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.barcodeTB = new System.Windows.Forms.TextBox();
-            this.productnameTB = new System.Windows.Forms.TextBox();
-            this.manfTB = new System.Windows.Forms.TextBox();
-            this.priceTB = new System.Windows.Forms.TextBox();
-            this.fgTB = new System.Windows.Forms.TextBox();
-            this.ammountTB = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.AddPctrBTN = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.l = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.panelHeaderInsert.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -94,35 +94,65 @@
             this.panel1.Size = new System.Drawing.Size(408, 400);
             this.panel1.TabIndex = 1;
             // 
-            // l
+            // AddPctrBTN
             // 
-            this.l.AutoSize = true;
-            this.l.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l.Location = new System.Drawing.Point(92, 32);
-            this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(60, 16);
-            this.l.TabIndex = 0;
-            this.l.Text = "Barcode";
+            this.AddPctrBTN.Location = new System.Drawing.Point(250, 361);
+            this.AddPctrBTN.Name = "AddPctrBTN";
+            this.AddPctrBTN.Size = new System.Drawing.Size(88, 27);
+            this.AddPctrBTN.TabIndex = 13;
+            this.AddPctrBTN.Text = "Durchsuchen";
+            this.AddPctrBTN.UseVisualStyleBackColor = true;
+            this.AddPctrBTN.Click += new System.EventHandler(this.AddPctrBTN_Click);
             // 
-            // label3
+            // pictureBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Produkt Name";
+            this.pictureBox1.Location = new System.Drawing.Point(48, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(290, 158);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // ammountTB
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(86, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Hersteller";
+            this.ammountTB.Location = new System.Drawing.Point(174, 158);
+            this.ammountTB.Name = "ammountTB";
+            this.ammountTB.Size = new System.Drawing.Size(164, 20);
+            this.ammountTB.TabIndex = 11;
+            // 
+            // fgTB
+            // 
+            this.fgTB.Location = new System.Drawing.Point(174, 132);
+            this.fgTB.Name = "fgTB";
+            this.fgTB.Size = new System.Drawing.Size(164, 20);
+            this.fgTB.TabIndex = 10;
+            // 
+            // priceTB
+            // 
+            this.priceTB.Location = new System.Drawing.Point(174, 106);
+            this.priceTB.Name = "priceTB";
+            this.priceTB.Size = new System.Drawing.Size(164, 20);
+            this.priceTB.TabIndex = 9;
+            // 
+            // manfTB
+            // 
+            this.manfTB.Location = new System.Drawing.Point(174, 80);
+            this.manfTB.Name = "manfTB";
+            this.manfTB.Size = new System.Drawing.Size(164, 20);
+            this.manfTB.TabIndex = 8;
+            // 
+            // productnameTB
+            // 
+            this.productnameTB.Location = new System.Drawing.Point(174, 54);
+            this.productnameTB.Name = "productnameTB";
+            this.productnameTB.Size = new System.Drawing.Size(164, 20);
+            this.productnameTB.TabIndex = 7;
+            // 
+            // barcodeTB
+            // 
+            this.barcodeTB.Location = new System.Drawing.Point(174, 28);
+            this.barcodeTB.Name = "barcodeTB";
+            this.barcodeTB.Size = new System.Drawing.Size(164, 20);
+            this.barcodeTB.TabIndex = 6;
             // 
             // label5
             // 
@@ -154,65 +184,35 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Bestandsmenge";
             // 
-            // barcodeTB
+            // label4
             // 
-            this.barcodeTB.Location = new System.Drawing.Point(174, 28);
-            this.barcodeTB.Name = "barcodeTB";
-            this.barcodeTB.Size = new System.Drawing.Size(164, 20);
-            this.barcodeTB.TabIndex = 6;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(86, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Hersteller";
             // 
-            // productnameTB
+            // label3
             // 
-            this.productnameTB.Location = new System.Drawing.Point(174, 54);
-            this.productnameTB.Name = "productnameTB";
-            this.productnameTB.Size = new System.Drawing.Size(164, 20);
-            this.productnameTB.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(58, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Produkt Name";
             // 
-            // manfTB
+            // l
             // 
-            this.manfTB.Location = new System.Drawing.Point(174, 80);
-            this.manfTB.Name = "manfTB";
-            this.manfTB.Size = new System.Drawing.Size(164, 20);
-            this.manfTB.TabIndex = 8;
-            // 
-            // priceTB
-            // 
-            this.priceTB.Location = new System.Drawing.Point(174, 106);
-            this.priceTB.Name = "priceTB";
-            this.priceTB.Size = new System.Drawing.Size(164, 20);
-            this.priceTB.TabIndex = 9;
-            // 
-            // fgTB
-            // 
-            this.fgTB.Location = new System.Drawing.Point(174, 132);
-            this.fgTB.Name = "fgTB";
-            this.fgTB.Size = new System.Drawing.Size(164, 20);
-            this.fgTB.TabIndex = 10;
-            // 
-            // ammountTB
-            // 
-            this.ammountTB.Location = new System.Drawing.Point(174, 158);
-            this.ammountTB.Name = "ammountTB";
-            this.ammountTB.Size = new System.Drawing.Size(164, 20);
-            this.ammountTB.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(48, 194);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(290, 158);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // AddPctrBTN
-            // 
-            this.AddPctrBTN.Location = new System.Drawing.Point(250, 361);
-            this.AddPctrBTN.Name = "AddPctrBTN";
-            this.AddPctrBTN.Size = new System.Drawing.Size(88, 27);
-            this.AddPctrBTN.TabIndex = 13;
-            this.AddPctrBTN.Text = "Durchsuchen";
-            this.AddPctrBTN.UseVisualStyleBackColor = true;
-            this.AddPctrBTN.Click += new System.EventHandler(this.AddPctrBTN_Click);
+            this.l.AutoSize = true;
+            this.l.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l.Location = new System.Drawing.Point(92, 32);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(60, 16);
+            this.l.TabIndex = 0;
+            this.l.Text = "Barcode";
             // 
             // buttonAdd
             // 
@@ -222,7 +222,7 @@
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(408, 36);
             this.buttonAdd.TabIndex = 2;
-            this.buttonAdd.Text = "Add data to Database";
+            this.buttonAdd.Text = "Daten in Datenbank hinzufügen";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
